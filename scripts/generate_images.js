@@ -11,6 +11,15 @@ function section(markdown, heading) {
   return match[1].trim();
 }
 
+function optionalSection(markdown, heading) {
+  try {
+    return section(markdown, heading);
+  } catch (error) {
+    if (error.message === `Missing "## ${heading}" section.`) return null;
+    throw error;
+  }
+}
+
 async function generateImage({ prompt, size }) {
   const response = await fetch('https://api.openai.com/v1/images/generations', {
     method: 'POST',
@@ -36,9 +45,13 @@ async function main() {
   const markdown = await fs.readFile(absoluteArticlePath, 'utf8');
   const baseName = path.basename(articleFile, path.extname(articleFile));
   const destination = path.join(projectRoot, 'images', baseName);
+  const infographicOne = optionalSection(markdown, '인포그래픽 1 프롬프트')
+    ?? section(markdown, '인포그래픽 프롬프트');
+  const infographicTwo = optionalSection(markdown, '인포그래픽 2 프롬프트');
   const jobs = [
     { name: 'thumbnail', prompt: section(markdown, '썸네일 프롬프트'), size: '1024x1024' },
-    { name: 'infographic-01', prompt: section(markdown, '인포그래픽 프롬프트'), size: '1024x1536' },
+    { name: 'infographic-01', prompt: infographicOne, size: '1024x1024' },
+    ...(infographicTwo ? [{ name: 'infographic-02', prompt: infographicTwo, size: '1024x1024' }] : []),
   ];
 
   await fs.mkdir(destination, { recursive: true });
