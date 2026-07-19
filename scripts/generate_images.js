@@ -3,6 +3,13 @@ const path = require('node:path');
 
 const projectRoot = path.resolve(__dirname, '..');
 const imageModel = process.env.COSMOS_IMAGE_MODEL || 'gpt-image-2';
+const allowedInfographicSizes = new Set([
+  '1024x1024',
+  '1024x768',
+  '768x1024',
+  '1024x576',
+  '576x1024',
+]);
 
 function section(markdown, heading) {
   const expression = new RegExp(`^## ${heading}\\r?\\n([\\s\\S]*?)(?=^## |\\s*$)`, 'm');
@@ -18,6 +25,15 @@ function optionalSection(markdown, heading) {
     if (error.message === `Missing "## ${heading}" section.`) return null;
     throw error;
   }
+}
+
+function infographicSize(prompt) {
+  const match = prompt.match(/Canvas size:\s*(\d+x\d+)/i);
+  if (!match) return '1024x1024';
+  if (!allowedInfographicSizes.has(match[1])) {
+    throw new Error(`Unsupported infographic canvas size: ${match[1]}.`);
+  }
+  return match[1];
 }
 
 async function generateImage({ prompt, size }) {
@@ -50,8 +66,8 @@ async function main() {
   const infographicTwo = optionalSection(markdown, '인포그래픽 2 프롬프트');
   const jobs = [
     { name: 'thumbnail', prompt: section(markdown, '썸네일 프롬프트'), size: '1024x1024' },
-    { name: 'infographic-01', prompt: infographicOne, size: '1024x1024' },
-    ...(infographicTwo ? [{ name: 'infographic-02', prompt: infographicTwo, size: '1024x1024' }] : []),
+    { name: 'infographic-01', prompt: infographicOne, size: infographicSize(infographicOne) },
+    ...(infographicTwo ? [{ name: 'infographic-02', prompt: infographicTwo, size: infographicSize(infographicTwo) }] : []),
   ];
 
   await fs.mkdir(destination, { recursive: true });

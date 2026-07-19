@@ -8,11 +8,14 @@ Purpose: Define the prompt contract for infographic planning.
 
 ## Canvas and Page Rules
 
-- Every infographic must use a square `1024x1024` canvas. Do not create a
-  vertical canvas.
+- Both canvas dimensions must be no larger than `1024px`. Landscape, portrait,
+  and square layouts are all allowed when they improve readability.
+- Choose one canvas size for each infographic and state it explicitly as
+  `Canvas size: WIDTHxHEIGHT`. Use one of: `1024x1024`, `1024x768`,
+  `768x1024`, `1024x576`, or `576x1024`.
 - Keep one infographic to a headline plus no more than four short key points.
   It must be readable in one phone or monitor viewport without scrolling.
-- If the article needs five or more key points, produce two standalone square
+- If the article needs five or more key points, produce two standalone
   infographic prompts: `Infographic 1` and `Infographic 2`. Split the points
   into a logical sequence and give each image its own clear headline.
 - Do not shrink text or crowd icons to force extra information onto one image.
