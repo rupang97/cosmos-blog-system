@@ -42,10 +42,11 @@ balance clarity, curiosity, and trust in 2–3 sentences.
 ## Image Prompt
 
 Write one image-generation prompt. Describe the visual subject, composition,
-lighting, style, and text-safe empty space. Include the recommended thumbnail
-text in quotation marks. If Korean text rendering may be unreliable, instruct
-the generator to leave text-safe space and use the recommended text as overlay
-copy instead. Do not make visual claims that the article cannot support.
+lighting, style, and a clear text placement area. Include the recommended
+thumbnail text in quotation marks and instruct the generator to render it
+verbatim inside the image in large, high-contrast Korean typography. Do not
+add, omit, translate, or alter any text. Do not make visual claims that the
+article cannot support.
 
 ## Thumbnail Text Options
 

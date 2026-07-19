@@ -88,7 +88,7 @@ A: 사용 설명서에서 사용자가 관리하도록 안내한 범위를 넘�
 
 ## 썸네일 프롬프트
 
-Clean Korean lifestyle blog thumbnail for an air-conditioner odor-management article. Show a bright modern room with a clean wall-mounted air conditioner, a removable dust filter, and a subtle transition from a damp gray air swirl to fresh blue airflow. Include large, high-contrast Korean headline text: "에어컨 곰팡이 냄새". Include one smaller supporting keyword: "필터만 청소하면 될까?". Use clear Korean typography, generous empty space, blue and white palette, minimal but attention-grabbing composition, square 1024x1024. Do not add other text or unsupported claims. If Korean text cannot be rendered accurately, create the image without text and use these exact phrases as overlay copy.
+Clean Korean lifestyle blog thumbnail for an air-conditioner odor-management article. Show a bright modern room with a clean wall-mounted air conditioner, a removable dust filter, and a subtle transition from a damp gray air swirl to fresh blue airflow. Render this exact Korean headline verbatim inside the image: "에어컨 곰팡이 냄새". Render this exact Korean supporting phrase verbatim below it: "필터만 청소하면 될까?". Use large, high-contrast Korean typography in the left-side text area, with generous spacing and no overlap with the air conditioner. Do not add, omit, translate, or alter any text. Use a blue and white palette, minimal but attention-grabbing composition, square 1024x1024. Do not add unsupported claims, logos, or watermarks.
 
 ## 인포그래픽 프롬프트
 
