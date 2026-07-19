@@ -4,10 +4,15 @@ const readline = require('node:readline/promises');
 const { spawn } = require('node:child_process');
 const { stdin: input, stdout: output } = require('node:process');
 const { buildPublishingPrompts } = require('../lib/promptBuilder');
+const {
+  PUBLISH_DOCUMENT_FILENAME,
+  buildPublishDocument,
+} = require('../lib/publishDocumentBuilder');
 
 const projectRoot = path.resolve(__dirname, '..');
 const seriesPath = path.join(projectRoot, 'config', 'series.json');
 const templatePath = path.join(projectRoot, 'templates', 'living-info.md');
+const reviewTemplatePath = path.join(projectRoot, 'reviews', 'article-review.md');
 const outputDirectory = path.join(projectRoot, 'output');
 
 /**
@@ -29,21 +34,31 @@ async function promptForArticleDetails() {
 }
 
 /**
- * Saves each assembled publishing prompt for review without calling an AI service.
+ * Saves each prompt and its convenience publishing document without calling an AI service.
  *
  * @param {Array<{filename: string, content: string}>} prompts - Prompt files to save.
  * @returns {Promise<string[]>} The saved prompt filenames.
  */
-async function savePrompts(prompts) {
+async function savePublishingPackage(prompts) {
   await fs.mkdir(outputDirectory, { recursive: true });
 
+  const review = await fs.readFile(reviewTemplatePath, 'utf8');
+  const publishDocument = buildPublishDocument({ prompts, review });
+
   await Promise.all(
-    prompts.map(({ filename, content }) =>
-      fs.writeFile(path.join(outputDirectory, filename), content, 'utf8'),
-    ),
+    [
+      ...prompts.map(({ filename, content }) =>
+        fs.writeFile(path.join(outputDirectory, filename), content, 'utf8'),
+      ),
+      fs.writeFile(
+        path.join(outputDirectory, PUBLISH_DOCUMENT_FILENAME),
+        publishDocument,
+        'utf8',
+      ),
+    ],
   );
 
-  return prompts.map(({ filename }) => filename);
+  return [...prompts.map(({ filename }) => filename), PUBLISH_DOCUMENT_FILENAME];
 }
 
 /**
@@ -120,7 +135,7 @@ async function generateArticle() {
 
   // Prompt creation is local-only in this MVP; no AI API is called.
   const prompts = await buildPublishingPrompts({ series, title });
-  const promptFiles = await savePrompts(prompts);
+  const promptFiles = await savePublishingPackage(prompts);
   const articlePrompt = prompts.find(
     ({ filename }) => filename === 'article.prompt.md',
   );

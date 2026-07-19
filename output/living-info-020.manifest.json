@@ -1,0 +1,20 @@
+{
+  "series": "living-info",
+  "articleNumber": 20,
+  "title": "에어컨 곰팡이 냄새, 필터만 청소하면 될까요?",
+  "articleFile": "living-info-020.md",
+  "createdAt": "2026-07-19T00:00:00+09:00",
+  "knowledgeSources": [
+    "knowledge/living-info/article-patterns.md",
+    "knowledge/living-info/title-patterns.md",
+    "knowledge/living-info/analogy-library.md",
+    "knowledge/living-info/faq-patterns.md",
+    "knowledge/living-info/keyword-patterns.md"
+  ],
+  "status": "draft",
+  "workflow": {
+    "generated": true,
+    "reviewed": false,
+    "published": false
+  }
+}

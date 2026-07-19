@@ -11,3 +11,13 @@ Purpose: Define the prompt contract for article generation.
 - Write the FAQ section as clear question-and-answer pairs.
 - Use `Q: 질문` on one line and `A: 답변` on the next line.
 - Keep each answer practical, accurate, and directly responsive to its question.
+
+## Keyword Library Policy
+
+- Consult `knowledge/<series>/keyword-library.yaml` before choosing SEO
+  keywords, tags, or keyword-based headings.
+- Prefer only keywords marked `verified` in the library.
+- A `candidate` keyword may be proposed for human review, but must not be
+  presented as a verified SEO asset or forced unnaturally into the article.
+- If no verified keyword matches the topic, use natural reader language and
+  record proposed candidates separately for later validation.
