@@ -24,6 +24,10 @@
 
 {{THUMBNAIL_PROMPT}}
 
-## 인포그래픽 프롬프트
+## 인포그래픽 1 프롬프트
 
-{{INFOGRAPHIC_PROMPT}}
+{{INFOGRAPHIC_1_PROMPT}}
+
+## 인포그래픽 2 프롬프트
+
+{{INFOGRAPHIC_2_PROMPT}}
