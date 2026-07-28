@@ -4,6 +4,11 @@ const readline = require('node:readline/promises');
 const { spawn } = require('node:child_process');
 const { stdin: input, stdout: output } = require('node:process');
 const { buildPublishingPrompts } = require('../lib/promptBuilder');
+const {
+  assertApprovedPlan,
+  assertHumanSelectedTitle,
+  extractPlanningScore,
+} = require('../lib/plannerEngine');
 
 const projectRoot = path.resolve(__dirname, '..');
 const sessionRoot = path.join(projectRoot, 'logs', 'sessions');
@@ -33,20 +38,49 @@ async function copyToClipboard(text) {
 }
 
 async function main() {
-  const [series, title] = process.argv.slice(2);
-  if (!series || !title) {
-    throw new Error('Usage: node scripts/writer_assistant.js <series> <title>');
+  const [series, title, articleBriefPath, planningScoreText, humanDecision] = process.argv.slice(2);
+  if (!series || !title || !articleBriefPath || !planningScoreText || !humanDecision) {
+    throw new Error(
+      'Usage: node scripts/writer_assistant.js <series> <title> <approved-brief-path> <planning-score> <human-decision>',
+    );
   }
+
+  const articleBrief = await fs.readFile(path.resolve(articleBriefPath), 'utf8');
+  assertHumanSelectedTitle({ brief: articleBrief, selectedTitle: title });
+  const planningScore = Number(planningScoreText);
+  const briefScore = extractPlanningScore(articleBrief);
+  if (planningScore !== briefScore) {
+    throw new Error(
+      `Planning Score does not match the Article Brief (${briefScore}).`,
+    );
+  }
+  const planning = {
+    status: planningScore >= 85 ? 'approved' : 'needs_improvement',
+    score: planningScore,
+    approved: planningScore >= 85,
+    humanDecision,
+  };
+  assertApprovedPlan({ brief: articleBrief, planning });
 
   const now = new Date();
   const date = now.toISOString().slice(0, 10);
   const sessionDirectory = path.join(sessionRoot, date, `${series}-${safeName(title)}-${now.getTime()}`);
-  const prompts = await buildPublishingPrompts({ series, title });
+  const prompts = await buildPublishingPrompts({ series, title, articleBrief });
   const promptByName = new Map(prompts.map((prompt) => [prompt.filename, prompt.content]));
-  const events = [{ type: 'session_started', at: now.toISOString() }];
+  const events = [{
+    type: 'session_started',
+    planningScore,
+    articleBriefPath: path.resolve(articleBriefPath),
+    at: now.toISOString(),
+  }];
 
   await fs.mkdir(sessionDirectory, { recursive: true });
-  await Promise.all(prompts.map(({ filename, content }) => fs.writeFile(path.join(sessionDirectory, filename), content, 'utf8')));
+  await Promise.all([
+    fs.writeFile(path.join(sessionDirectory, 'article-brief.md'), articleBrief, 'utf8'),
+    ...prompts.map(({ filename, content }) =>
+      fs.writeFile(path.join(sessionDirectory, filename), content, 'utf8'),
+    ),
+  ]);
 
   const terminal = readline.createInterface({ input, output });
   try {
@@ -68,7 +102,11 @@ async function main() {
   }
 
   events.push({ type: 'session_completed', at: new Date().toISOString() });
-  await fs.writeFile(path.join(sessionDirectory, 'session.json'), `${JSON.stringify({ series, title, events }, null, 2)}\n`, 'utf8');
+  await fs.writeFile(
+    path.join(sessionDirectory, 'session.json'),
+    `${JSON.stringify({ series, title, planning, events }, null, 2)}\n`,
+    'utf8',
+  );
   console.log(`\nPublishing Package Complete\nSession: ${path.relative(projectRoot, sessionDirectory)}`);
 }
 

@@ -1,0 +1,51 @@
+{
+  "articleFile": "output/living-info-026/living-info-026.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-27T00:00:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-info-026/living-info-026.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "물놀이 갈 때 이것도 챙겼나요?",
+        "물놀이 준비물 체크리스트"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-026/living-info-026.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "물놀이 준비물 체크리스트",
+        "구명조끼",
+        "아쿠아슈즈",
+        "자외선 차단",
+        "여벌 옷",
+        "방수팩",
+        "물과 간식",
+        "구급용품",
+        "방수 가방",
+        "장소 안내",
+        "보호자 약속"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-02-v1.png",
+      "promptSource": "output/living-info-026/living-info-026.md#인포그래픽-2-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "출발 전 마지막 확인",
+        "안전용품 챙기기",
+        "날씨·장소 확인",
+        "보호자 역할 정하기"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "articleFile": "output/living-info-021.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-21T00:00:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-info-021.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "폭염 외출 전 확인"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-021.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "한여름 외출 준비 5단계",
+        "1 기온과 특보 확인",
+        "2 더운 시간 피하기",
+        "3 양산과 물 챙기기",
+        "4 그늘진 길 선택",
+        "5 지치기 전에 쉬기"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

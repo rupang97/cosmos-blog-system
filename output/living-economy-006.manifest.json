@@ -1,0 +1,29 @@
+{
+  "series": "living-economy",
+  "articleNumber": 6,
+  "title": "생활비 대출 받는 방법: 대출 체크리스트, 금리·상환액·상담 경로 확인법",
+  "articleFile": "living-economy-006.md",
+  "createdAt": "2026-07-28T00:00:00+09:00",
+  "knowledgeSources": [
+    "knowledge/living-economy/article-patterns.md",
+    "knowledge/living-economy/title-patterns.md",
+    "knowledge/living-economy/faq-patterns.md",
+    "knowledge/living-economy/keyword-library.yaml",
+    "knowledge/living-economy/related-articles.md"
+  ],
+  "status": "draft",
+  "workflow": {
+    "generated": true,
+    "reviewed": false,
+    "published": false
+  },
+  "planning": {
+    "status": "approved",
+    "score": 93,
+    "approved": true,
+    "brief": "living-economy-006-article-brief.md",
+    "humanDecision": "create_new",
+    "selectionReason": "사람 편집자가 후보 1과 3의 장점을 결합한 제목을 직접 선택함.",
+    "titleDecisionStatus": "hypothesis"
+  }
+}

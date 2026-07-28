@@ -1,0 +1,13 @@
+{
+  "series": "living-info",
+  "articleNumber": 23,
+  "title": "중복 음식 추천, 삼계탕 말고 무엇을 먹을까?",
+  "articleFile": "living-info-023.md",
+  "status": "draft",
+  "workflow": {
+    "generated": true,
+    "reviewed": false,
+    "published": false
+  },
+  "createdAt": "2026-07-26T00:00:00.000Z"
+}

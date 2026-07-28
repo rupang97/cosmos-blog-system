@@ -1,0 +1,31 @@
+{
+  "articleFile": "output/living-info-019.md",
+  "generationMethod": "legacy asset; method not recorded",
+  "assets": [
+    {
+      "filename": "thumbnail-v3.png",
+      "promptSource": "output/living-info-019.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "에어컨 곰팡이 냄새",
+        "필터만 청소하면 될까?"
+      ],
+      "status": "pending_review",
+      "textValidation": "manual_required"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-019.md#인포그래픽-프롬프트",
+      "canvasSize": "1024x1024",
+      "status": "pending_review",
+      "textValidation": "manual_required"
+    },
+    {
+      "filename": "infographic-01-v2.png",
+      "promptSource": "output/living-info-019.md#인포그래픽-프롬프트",
+      "canvasSize": "1024x1024",
+      "status": "pending_review",
+      "textValidation": "manual_required"
+    }
+  ]
+}

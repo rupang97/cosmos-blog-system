@@ -1,0 +1,48 @@
+{
+  "articleFile": "output/living-economy-005.md",
+  "generationMethod": "OpenAI image generation",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-economy-005.md#최종-썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "내 월급은 어디로 사라질까?",
+        "생활비 정리 5단계"
+      ],
+      "status": "approved",
+      "textValidation": "manual_verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-economy-005.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "월급날 생활비 정리 5단계",
+        "확정 지출 빼기",
+        "고정·변동 나누기",
+        "비정기 지출 준비",
+        "기간별 한도 계산",
+        "차이 원인 기록"
+      ],
+      "status": "approved",
+      "textValidation": "manual_verified"
+    },
+    {
+      "filename": "infographic-02-v1.png",
+      "promptSource": "output/living-economy-005.md#인포그래픽-2-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "월급 300만 원 계산 예시",
+        "설명용 예시",
+        "월급 300만 원",
+        "확정 지출 167만 원",
+        "비정기 준비 15만 원",
+        "완충금 10만 원",
+        "주간 생활비 27만 원"
+      ],
+      "status": "approved",
+      "textValidation": "manual_verified"
+    }
+  ]
+}

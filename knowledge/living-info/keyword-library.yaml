@@ -4,6 +4,9 @@
 # Rule: Only entries marked "verified" may be selected automatically for a
 # published article. "candidate" entries require human review or external
 # search-data validation before they are promoted to "verified".
+# Optional selection metadata: channel_fit (`naver`, `google`, `both`),
+# lifecycle (`evergreen`, `seasonal`, `event`), evidence.source_type,
+# evidence.source, evidence.observed_at.
 
 version: 1
 series: living-info

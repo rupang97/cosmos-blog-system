@@ -4,25 +4,18 @@
 - Reviewer: `{{REVIEWER}}`
 - Status: `pending`
 
-## 1. 검색 의도에 잘 맞았는가?
+## Review Notes
 
-- Score (1-5):
-- Reason:
+{{REVIEW_NOTES}}
 
-## 2. 도입부가 흥미를 끌었는가?
+## Required Changes
 
-- Score (1-5):
-- Reason:
+{{REQUIRED_CHANGES}}
 
-## 3. 설명이 쉽게 이해되는가?
+## Final Draft Checklist
 
-- Score (1-5):
-- Reason:
-
-## 4. 가장 좋았던 문장
-
-## 5. 삭제하거나 수정하고 싶은 문장
-
-## 6. Knowledge에 추가할 패턴
-
-## 7. 다음 글에서 반드시 개선할 점
+- [x] 각 제목이 바로 아래 내용과 정확히 맞는다.
+- [x] 근거 없는 사실·수치·제품 추천이 없다.
+- [x] 상품 영역에 네이버 쇼핑 커넥트 고지 문구가 제목 바로 아래에 있다.
+- [x] 상품명은 글과 직접 관련된 항목만 포함한다.
+- [x] 관련 글과 참고 링크가 실제 내용에 맞고, 임의의 URL이 없다.

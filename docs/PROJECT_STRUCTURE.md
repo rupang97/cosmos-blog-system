@@ -5,6 +5,7 @@ COSMOS (Content Operating System for Multi-channel Optimized Strategy) keeps str
 ```text
 COSMOS/
 ├── docs/                  Project documentation and architecture
+├── knowledge/editorial/   Append-only evidence, human-approved rules, and proven patterns
 ├── config/                Configuration for workflows and channels
 ├── prompts/               Reusable AI prompt assets
 │   ├── article/           Long-form content prompts

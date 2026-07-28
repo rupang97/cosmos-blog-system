@@ -1,0 +1,17 @@
+{
+  "articleFile": "output/living-economy-006.md",
+  "generationMethod": "OpenAI image generation",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-economy-006.md#최종-썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "생활비 대출 월상환액 얼마?",
+        "생활비 대출전 체크리스트 5가지"
+      ],
+      "status": "approved",
+      "textValidation": "manual_verified"
+    }
+  ]
+}

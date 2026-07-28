@@ -1,0 +1,45 @@
+{
+  "articleFile": "output/living-info-022/living-info-022.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-22T19:19:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-info-022/living-info-022.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "더위 먹은 증상"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-022/living-info-022.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "더위 먹은 증상 대응",
+        "활동 멈추기",
+        "시원한 곳에서 쉬기",
+        "심하면 119"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-02-v1.png",
+      "promptSource": "output/living-info-022/living-info-022.md#인포그래픽-2-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "대서, 몸의 신호 확인",
+        "대서",
+        "기온·특보",
+        "어지러움",
+        "두통",
+        "피로"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

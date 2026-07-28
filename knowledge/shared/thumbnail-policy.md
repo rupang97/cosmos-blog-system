@@ -32,6 +32,19 @@ When relevant to the article, prefer precise, useful words such as:
 - 확인
 - 궁금증
 
+## Portal Home-feed Curiosity
+
+- A home-feed option may use a question, knowledge gap, overlooked step, or
+  gentle contrast that the article resolves directly.
+- Keep the subject visible in the copy. Do not replace the subject with vague
+  bait such as `이것`, `이유는?`, or `결과는?` when the reader cannot tell what
+  the article is about.
+- Curiosity must come from withholding the supported answer, not from hiding
+  the topic, exaggerating danger, or implying a guaranteed result.
+- Present home-feed curiosity copy alongside information-first copy so a human
+  editor can choose the final direction. Do not automatically select or rank a
+  winner.
+
 ## Final Check
 
 - Is the topic clear at a glance?

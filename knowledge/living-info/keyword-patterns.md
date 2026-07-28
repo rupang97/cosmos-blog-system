@@ -1,3 +1,7 @@
 # Living Info Keyword Patterns
 
-<!-- Placeholder: reusable keyword structures for the living-info series. -->
+- 구조: `주제어 + 행동어 + 구체 조건(대상·지역·시기·상황)`
+- 행동어 예시: 확인, 비교, 신청, 계산, 점검, 해결, 선택
+- 계절·정책·행사성 키워드는 `seasonal` 또는 `event`로 표시하고 확인일을 남긴다.
+- 검색 수요나 성과는 검증 근거 없이 단정하지 않는다.
+- 키워드 반복과 제목 낚시는 금지한다.

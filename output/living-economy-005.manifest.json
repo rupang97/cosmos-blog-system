@@ -1,0 +1,28 @@
+{
+  "series": "living-economy",
+  "articleNumber": 5,
+  "title": "월급날마다 돈이 사라진다면? 생활비 정리 순서 5단계",
+  "articleFile": "living-economy-005.md",
+  "createdAt": "2026-07-27T00:00:00+09:00",
+  "knowledgeSources": [
+    "knowledge/living-economy/article-patterns.md",
+    "knowledge/living-economy/title-patterns.md",
+    "knowledge/living-economy/faq-patterns.md",
+    "knowledge/living-economy/keyword-library.yaml",
+    "knowledge/living-economy/related-articles.md"
+  ],
+  "status": "draft",
+  "workflow": {
+    "generated": true,
+    "reviewed": false,
+    "published": false
+  },
+  "planning": {
+    "status": "approved",
+    "score": 91,
+    "approved": true,
+    "brief": "living-economy-005-article-brief.md",
+    "selectionReason": null,
+    "titleDecisionStatus": "hypothesis"
+  }
+}

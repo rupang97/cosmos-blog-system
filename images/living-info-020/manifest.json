@@ -1,0 +1,33 @@
+{
+  "articleFile": "output/living-info-020.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-20T00:00:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v4.png",
+      "promptSource": "output/living-info-020.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "장마철 빨래 냄새",
+        "먼저 확인할 5가지"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v4.png",
+      "promptSource": "output/living-info-020.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "장마철 빨래 냄새 관리",
+        "1 세탁 후 바로 널기",
+        "2 빨래 사이 간격 만들기",
+        "3 세제 권장량 지키기",
+        "4 세탁기 내부 환기",
+        "5 반복되면 원인 나누기"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

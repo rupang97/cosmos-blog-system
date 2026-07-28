@@ -1,0 +1,37 @@
+{
+  "series": "living-info",
+  "articleNumber": 21,
+  "title": "폭염 속 외출 전 확인할 5가지, 양산부터 물까지",
+  "articleFile": "living-info-021.md",
+  "createdAt": "2026-07-21T00:00:00+09:00",
+  "knowledgeSources": [
+    "knowledge/living-info/article-patterns.md",
+    "knowledge/living-info/title-patterns.md",
+    "knowledge/living-info/faq-patterns.md",
+    "knowledge/living-info/keyword-library.yaml",
+    "knowledge/living-info/related-articles.md"
+  ],
+  "status": "draft",
+  "workflow": {
+    "generated": true,
+    "reviewed": true,
+    "published": false
+  },
+  "planning": {
+    "status": "approved",
+    "score": 92,
+    "approved": true,
+    "brief": "living-info-021-plan-proposal.md",
+    "selectionReason": null,
+    "titleDecisionStatus": "hypothesis"
+  },
+  "qualityReportFile": "living-info-021-quality-report.md",
+  "quality": {
+    "status": "pass",
+    "score": 94,
+    "level": "publish_ready",
+    "confidence": 90,
+    "rewriteSections": [],
+    "knowledgeSuggestions": []
+  }
+}

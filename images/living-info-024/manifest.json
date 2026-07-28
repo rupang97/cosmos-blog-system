@@ -1,0 +1,43 @@
+{
+  "articleFile": "output/living-info-024/living-info-024.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-27T00:00:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-info-024/living-info-024.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "여름철 음식 보관법, 냉장고에만 넣으면 될까?"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-024/living-info-024.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "남은 음식 보관 순서",
+        "소분하기",
+        "날짜 적기",
+        "빠르게 냉장 보관"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-02-v1.png",
+      "promptSource": "output/living-info-024/living-info-024.md#인포그래픽-2-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "냉장고 속 음식 분리",
+        "조리한 음식",
+        "바로 먹는 음식",
+        "날식재료는 아래쪽"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

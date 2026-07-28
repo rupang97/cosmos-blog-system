@@ -1,0 +1,45 @@
+{
+  "articleFile": "output/living-info-023/living-info-023.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-26T00:00:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-info-023/living-info-023.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "복날에 삼계탕 말고 뭐 먹지?"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-023/living-info-023.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "중복 음식 선택지",
+        "따뜻한 국물",
+        "담백한 단백질",
+        "구이 메뉴",
+        "차가운 면"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-02-v1.png",
+      "promptSource": "output/living-info-023/living-info-023.md#인포그래픽-2-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "중복 음식 안전하게 고르기",
+        "내 몸 상태 확인",
+        "양과 간 조절",
+        "채소 곁들이기",
+        "충분히 익혀 먹기"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

@@ -1,4 +1,8 @@
 # COSMOS Keyword Library
+#
+# Optional selection metadata: channel_fit (`naver`, `google`, `both`),
+# lifecycle (`evergreen`, `seasonal`, `event`), evidence.source_type,
+# evidence.source, evidence.observed_at.
 
 version: 1
 series: ai-literacy

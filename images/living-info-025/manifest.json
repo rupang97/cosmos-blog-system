@@ -1,0 +1,45 @@
+{
+  "articleFile": "output/living-info-025/living-info-025.md",
+  "generationMethod": "built-in image generator",
+  "createdAt": "2026-07-27T00:00:00+09:00",
+  "assets": [
+    {
+      "filename": "thumbnail-v1.png",
+      "promptSource": "output/living-info-025/living-info-025.md#썸네일-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "물에 들어가기 전, 확인했나요?",
+        "물놀이 전 확인할 5가지"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-01-v1.png",
+      "promptSource": "output/living-info-025/living-info-025.md#인포그래픽-1-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "물놀이 전 안전 점검",
+        "장소 확인",
+        "몸 상태 확인",
+        "구명조끼 착용",
+        "보호자 관찰"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    },
+    {
+      "filename": "infographic-02-v1.png",
+      "promptSource": "output/living-info-025/living-info-025.md#인포그래픽-2-프롬프트",
+      "canvasSize": "1024x1024",
+      "requiredText": [
+        "물에 빠진 사람을 발견했다면",
+        "주변에 도움 요청",
+        "119 신고",
+        "구명장비 활용"
+      ],
+      "status": "approved",
+      "textValidation": "verified"
+    }
+  ]
+}

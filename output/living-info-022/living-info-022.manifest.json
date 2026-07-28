@@ -1,0 +1,48 @@
+{
+  "series": "living-info",
+  "articleNumber": 22,
+  "title": "더위 먹은 증상 해결, 대서에 어지럽고 힘이 빠진다면",
+  "articleFile": "living-info-022.md",
+  "promptFiles": [
+    "article-plan.prompt.md",
+    "article-brief.md",
+    "article.prompt.md",
+    "thumbnail.prompt.md",
+    "infographic-01.prompt.md",
+    "infographic-02.prompt.md",
+    "tags.prompt.md",
+    "seo.prompt.md",
+    "seo-package.prompt.md",
+    "publish.md",
+    "living-info-022-quality-review.prompt.md"
+  ],
+  "status": "draft",
+  "workflow": {
+    "generated": true,
+    "reviewed": true,
+    "published": false
+  },
+  "planning": {
+    "status": "approved",
+    "score": 93,
+    "approved": true,
+    "brief": "article-brief.md",
+    "selectionReason": "대서의 뜻과 더위 먹은 증상 해결이라는 검색 의도를 함께 분명하게 전합니다.",
+    "titleDecisionStatus": "hypothesis"
+  },
+  "quality": {
+    "status": "pass",
+    "score": 94,
+    "level": "publish_ready",
+    "confidence": 92,
+    "rewriteSections": [],
+    "knowledgeSuggestions": []
+  },
+  "validation": {
+    "status": "pending",
+    "eventId": null,
+    "validatedAt": null
+  },
+  "createdAt": "2026-07-22T08:29:46.522Z",
+  "qualityReportFile": "living-info-022-quality-report.md"
+}
